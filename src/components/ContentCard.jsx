@@ -15,6 +15,8 @@ import {
   GridItem,
   CardFooter,
   Button,
+  Center,
+  
 } from "@chakra-ui/react";
 import { PiMapPinFill, PiLinkBold, PiTwitterLogoFill } from "react-icons/pi";
 import { HiBuildingOffice2 } from "react-icons/hi2";
@@ -26,8 +28,9 @@ const ContentCard = ({ user }) => {
   return (
     <>
       <Card
-        w={{ base: "327px", md: "573px", lg: "740px", xl: "800px",'2xl':"800px"}}
-        h={{ base: "500px", md: "500px", lg: "420px", xl: "380px" ,'2xl':"500px"}}
+      
+        w={{base:"500px" ,md: "573px", lg: "740px", xl: "800px",'2xl':"800px"}}
+        h={{ base:"500px", md: "500px", lg: "420px", xl: "380px" ,'2xl':"500px"}}
         
         marginBlock={{ base: "4rem", md: "4rem", lg: "2rem", xl: "2rem",'2xl':"6rem"}}
         marginInline={{ base: "3rem", md: "7rem", lg: "10rem", xl: "15rem",'2xl':"35rem" }}
@@ -64,10 +67,10 @@ const ContentCard = ({ user }) => {
               <Flex justifyContent= {{base:"space-evenly",md:"space-between",lg:"space-between",xl:"space-between"}}>
                 <Heading
                   color={isDarkMode ? "#FFF" : "#697C9A"}
-                  fontSize={"2xl"}
+                  fontSize={"xl"}
                   textTransform={"capitalize"}
                   width={{base:"10rem"}}
-                  marginLeft={{base:"-20px"}}
+                  marginLeft={{base:"-25px"}}
                 >
                   {user ? user.login : "The Octocat"}
                 </Heading>
@@ -107,12 +110,12 @@ const ContentCard = ({ user }) => {
             </GridItem>
             <GridItem>
               <Box
-                w={{base:"280px",md:"500px",lg:"500px",xl:"550px"} }
+                w={{base:"240px",md:"500px",lg:"500px",xl:"550px"} }
                 bgColor={isDarkMode ? "#141D2F" : "#F6F8FF"}
                 padding={"1rem"}
                 pos={"absolute"} 
-                top={{base:"220px",md:"240px",lg:"220px",xl:"180px"} }
-                 h={{base:"5rem",md:"5rem",lg:"5rem",xl:"5rem"} }
+                top={{base:"240px",md:"240px",lg:"220px",xl:"180px"} }
+                 h={{base:"4rem",md:"5rem",lg:"5rem",xl:"5rem"} }
                  left={{base:"0px",md:"20px",lg:"140px",xl:"150px"} }
                  borderRadius={"1rem"}
               >
@@ -120,7 +123,7 @@ const ContentCard = ({ user }) => {
                   <Box>
                     <Text fontSize={"sm"}>Repos</Text>
                     <Heading
-                      fontSize={"xl"}
+                      fontSize={"md"}
                       fontWeight={"bold"}
                       color={isDarkMode ? "#FFF" : "#141D2F"}
                     >
@@ -132,7 +135,7 @@ const ContentCard = ({ user }) => {
                       Followers
                     </Text>
                     <Heading
-                      fontSize={"xl"}
+                      fontSize={"md"}
                       fontWeight={700}
                       color={isDarkMode ? "#FFF" : "#141D2F"}
                     >
@@ -141,13 +144,16 @@ const ContentCard = ({ user }) => {
                   </Box>
                   <Box>
                     <Text fontSize={"sm"}>Followering</Text>
+                    <Center>
                     <Heading
-                      fontSize={"xl"}
+                      fontSize={"md"}
                       fontWeight={"bold"}
                       color={isDarkMode ? "#FFF" : "#141D2F"}
                     >
                       {user ? user.following : "9"}
                     </Heading>
+                    </Center>
+                    
                   </Box>
                 </Flex>
               </Box>
@@ -182,7 +188,9 @@ const ContentCard = ({ user }) => {
           </Button>
 
           <Button
-          flex= {{base:"0.7",md:"1.2",lg:"1.2",xl:"1.2"}}
+          flex=
+        
+           {{base:"",md:"1.2",lg:"1.2",xl:"1.2"}}
             variant="ghost"
             leftIcon={<PiTwitterLogoFill />}
             gap={"2"}

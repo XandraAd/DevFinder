@@ -15,8 +15,8 @@ const NavBar = () => {
         width={{ base: "327px",md:"573px", lg: "730px",xl:"800px",'2xl':"800px"}}
         h={"55px"}
         marginTop={"2rem"}
-       
-       marginInline={{ base: "3rem", md: "7rem", lg: "10rem", xl: "15rem",'2xl':"35rem" }}
+       border={"2px"}
+       marginInline={{ base: "3rem", md: "7rem", lg: "10rem", xl: "20rem",'2xl':"35rem" }}
       
      
       >

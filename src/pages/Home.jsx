@@ -3,7 +3,7 @@ import React,{useState} from "react";
 import NavBar from "../components/NavBar";
 import SearchInput from "../components/SearchInput";
 import ContentCard from "../components/ContentCard";
-import { Center, Box } from "@chakra-ui/react";
+import { Center, Box, Container } from "@chakra-ui/react";
 import { GetThemeValues } from "../components/ContextProvider";
 import axios from 'axios'
 
@@ -41,16 +41,24 @@ Authorization:`Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`
 
   return (
     <>
-      <Center>
-        <Box 
-        w={"100vw"}
-        h={"100vh"}
-         bgColor= {isDarkMode ? "#141D2F":"#F6F8FF"}>
-          <NavBar />
-          <SearchInput  getGithubUser={getGithubUser} error={error}/>
-          <ContentCard  user={user}/>
-        </Box>
-      </Center>
+      
+      <Box 
+      w='100%'
+
+h={"100vh"}
+bgColor= {isDarkMode ? "#141D2F":"#F6F8FF"}
+ >
+  
+  <NavBar />
+  <SearchInput  getGithubUser={getGithubUser} error={error}/>
+  <Center>
+  <ContentCard  user={user}/>
+  </Center>
+ 
+</Box>
+     
+       
+      
     </>
   );
 };

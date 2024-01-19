@@ -13,7 +13,7 @@ import {
 import { GoSearch } from "react-icons/go";
 import { GetThemeValues } from "./ContextProvider";
 
-const SearchInput = ({ getGithubUser,user, error }) => {
+const SearchInput = ({ getGithubUser, error }) => {
   const { isDarkMode } = GetThemeValues();
   const [query, setQuery] = useState("");
 
@@ -38,10 +38,10 @@ const SearchInput = ({ getGithubUser,user, error }) => {
       <Box
         bgColor={isDarkMode ? "#1E2A47" : "#fff"}
         fontWeight={"bold"}
-        width={{ base: "327px", md: "573px", lg: "740px", xl: "800px",'2xl':"800px" }}
+        width={{ base: "330px", md: "550px", lg: "710px", xl: "800px",'2xl':"800px" }}
         h={"50px"}
         marginTop={"2rem"}
-       marginLeft={{ base: "3rem", md: "7rem", lg: "10rem", xl: "15rem",'2xl':"35rem"}}
+       marginLeft={{ base: "3rem", md: "7rem", lg: "10rem", xl: "20rem",'2xl':"35rem"}}
          //marginInline={"400px"}
         borderRadius={"1rem"}
         //margin={"0 auto"}
