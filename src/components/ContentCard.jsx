@@ -30,7 +30,7 @@ const ContentCard = ({ user }) => {
       <Card
       
         w={{base:"500px" ,md: "573px", lg: "740px", xl: "800px",'2xl':"800px"}}
-        h={{ base:"500px", md: "500px", lg: "420px", xl: "380px" ,'2xl':"500px"}}
+        h={{ base:"500px", md: "600px", lg: "520px", xl: "480px" ,'2xl':"600px"}}
         
         marginBlock={{ base: "4rem", md: "4rem", lg: "2rem", xl: "2rem",'2xl':"6rem"}}
         marginInline={{ base: "3rem", md: "7rem", lg: "10rem", xl: "15rem",'2xl':"35rem" }}
